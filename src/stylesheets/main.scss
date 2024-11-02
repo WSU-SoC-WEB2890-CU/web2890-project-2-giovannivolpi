@@ -1,3 +1,90 @@
 /* Your styles go here */
 @import "bootstrap/scss/bootstrap.scss";
 @import "bootstrap-icons/font/bootstrap-icons.css";
+
+
+/* BODY */
+
+body {
+    background-color: #B274B5;
+    color: white;    /* change to make accessbile and not use white */
+    
+}
+
+/* INDEX */
+
+.Main-title{
+    padding: 200px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.footer-section {
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+.footer-section h2 {
+    color: #ffd700;
+    margin-bottom: 10px;
+}
+
+.footer-section p, .footer-section ul {
+    font-size: 0.9em;
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 8px 0;
+}
+
+.footer-section ul li a {
+    color: #bbb;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #ffd700;
+}
+
+.footer .socials a {
+    color: #ffd700;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.footer .socials a:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    background-color: #222;
+    color: #bbb;
+    padding: 10px;
+    font-size: 0.8em;
+}
+
