@@ -88,3 +88,31 @@ body {
     font-size: 0.8em;
 }
 
+
+/*STAFFF PAGE*/
+
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .card {
+    border: none;
+    background-color: #AF96EB;
+  }
+  
+  .card img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    padding-top: 15px;
+  }
+  
+  .card-title {
+    font-size: 1.2em;
+    color: white; /* Cinnamon color */
+  }
+  
+  .card-subtitle {
+    color: white; /* Sage color */
+  }
