@@ -2,12 +2,20 @@
 @import "bootstrap/scss/bootstrap.scss";
 @import "bootstrap-icons/font/bootstrap-icons.css";
 
+$primary-color: #AF96EB;   
+$secondary-color: #FF5722; 
+$card-color: #B274B5;
+$fotter-color-text: #ffd700; 
+$fotter-color-secondary: #bbb; 
+$fotter-color-third: #333; 
+$text-color: white; 
+
 
 /* BODY */
 
 body {
-    background-color: #B274B5;
-    color: white;    /* change to make accessbile and not use white */
+    background-color: $card-color;
+    color: $text-color;   
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -24,8 +32,8 @@ h2{
 }
 
 .navbar-toggler-icon {
-    color: white !important;
-}
+    background-color: $text-color; 
+  }
 
 /* INDEX */
 
@@ -44,15 +52,15 @@ h2{
 }
 
 .review{
-    background-color: #AF96EB;
+    background-color: $primary-color;
 }
 
 
 /* FOOTER */
 
 .footer {
-    background-color: #333;
-    color: #fff;
+    background-color: $fotter-color-third;
+    color: $text-color;
     padding: 20px 0;
     text-align: center;
     font-family: Arial, sans-serif;
@@ -71,7 +79,7 @@ h2{
 }
 
 .footer-section h2 {
-    color: #ffd700;
+    color: $fotter-color-text;
     margin-bottom: 10px;
 }
 
@@ -90,29 +98,29 @@ h2{
 }
 
 .footer-section ul li a {
-    color: #bbb;
+    color: $fotter-color-secondary;
     text-decoration: none;
     transition: color 0.3s;
 }
 
 .footer-section ul li a:hover {
-    color: #ffd700;
+    color: $fotter-color-text;
 }
 
 .footer .socials a {
-    color: #ffd700;
+    color: $fotter-color-text;
     margin: 0 10px;
     text-decoration: none;
     font-size: 1.2em;
 }
 
 .footer .socials a:hover {
-    color: #fff;
+    color: $text-color;
 }
 
 .footer-bottom {
     background-color: #222;
-    color: #bbb;
+    color: $fotter-color-secondary;
     padding: 10px;
     font-size: 0.8em;
 }
@@ -126,7 +134,7 @@ body {
   
   .card {
     border: none;
-    background-color: #AF96EB;
+    background-color: $primary-color;
   }
   
   .card img {
@@ -139,9 +147,9 @@ body {
   
   .card-title {
     font-size: 1.2em;
-    color: white; /* Cinnamon color */
+    color: $text-color; 
   }
   
   .card-subtitle {
-    color: white; /* Sage color */
+    color: $text-color; 
   }
