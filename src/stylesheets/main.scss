@@ -8,7 +8,23 @@
 body {
     background-color: #B274B5;
     color: white;    /* change to make accessbile and not use white */
-    
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    font-size: 22px;
+}
+
+h1{
+    font-size: 110px;
+}
+
+h2{
+    font-size: 45px;
+}
+
+.navbar-toggler-icon {
+    color: white !important;
 }
 
 /* INDEX */
@@ -20,12 +36,15 @@ body {
 }
 
 .Main-index{
-    padding: 200px;
+    padding: 300px;
     font-weight: bold;
     text-align: center;
-    background-image: url('images/spa5.jpg');
+    background-image: url(../images/spa5.jpg);
     background-size: cover;
-    background-position: center;
+}
+
+.review{
+    background-color: #AF96EB;
 }
 
 
