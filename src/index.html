@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>WEB 2890 - Project 2</title>
+  <title>Cinnamon and Sage Spa</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="index,follow">
   <meta name="description" content="TODO: Project 2 ...">
@@ -12,17 +12,283 @@
 </head>
 
 <body>
-  <!-- Your HTML goes here -->
-  <h1 class="display-2 text-center my-5 py-5">
-    <span class="d-block py-5 mt-5">
-      <i class="bi bi-filetype-html text-primary"></i> / 
-      <i class="bi bi-filetype-css text-danger"></i> / 
-      <i class="bi bi-filetype-js text-success"></i>
-    </span>
+  <header>
+    <!-- NAV SECTION -->
+    <nav class="navbar bg-dark bg-body-tertiary fixed-top" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a href="./index.html"><img src="./images/logo.png" alt="Cinnamon and Sage Spa" style="height: 90px; border-radius: 30px;"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon bg-dark"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 style="color: black;" class="offcanvas-title" id="offcanvasNavbarLabel">C&S</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" href="./prices.html">Prices</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./aboutus.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./clinet.html">Staff Profiles</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
     
-    Project 2: A multiple-page project of your choosing.
-  </h1>
 
-  <script type="module" src="./javascripts/main.js"></script>
+    <!-- H1 SECTION -->
+
+    <div class="Main-index">
+      <h1>Cinnamon and Sage Spa</h1>
+    </div>
+
+  </header>
+
+  <main>
+    <div style="padding: 100px;" class="container text-center">
+      <h2>Welcome to Cinnamon and Sage Spa</h2>
+
+      <!-- FIRST MAIN SECTION -->
+      <p> 
+        We are a small business located in Salt Lake City, Utah. Our business offers a variety of treatments, including bundles where 
+        you can pick a varitey called 3-for-me. Depending on what you would like, we have it all! Click the button below to learn more about us.
+      </p>
+      <a type="button" class="btn-custom" href="./aboutus.html">About Us</a>
+
+    </div>
+
+    <!-- SECOND MAIN SECTION -->
+
+    <div style="padding: 100px;" class="container p-5 text-center">
+
+      <h2>Services</h2>
+      <p class="mb-5">We offer many types of massages. You can find more about what we offer, and bundles, by clicking the button below.</p>
+
+
+      <div class=" review row align-items-center p-5">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="testimonials__card">
+                <p class="lh-lg">
+                  <i class="bi bi-blockquote-left"></i>
+                  I had a great experiece here at C&S spa, it helped me with my back injury and I was completely sadisfied! Thank You C&S!
+                  <i class="bi bi-blockquote-right"></i>
+                <div class="ratings p-1">
+                  <i class="bi bi-star"></i>
+                  <i class="bi bi-star"></i>
+                  <i class="bi bi-star"></i>
+                  <i class="bi bi-star"></i>
+                  <i class="bi bi-star"></i>
+                </div>
+                </p>
+              </div>
+              <div class="testimonials__name">
+                <h3>Will Smith</h3>
+                <p class="fw-light">Actor</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="testimonials__card">
+                <p class="lh-lg">
+                  <i class="bi bi-blockquote-left"></i>
+                   I sure had a good time with the cusotmer service and treatments. Thanks C&S!
+                  <i class="bi bi-blockquote-right"></i>
+                <div class="ratings p-1">
+                  <i class="bi bi-star"></i>
+                  <i class="bi bi-star"></i>
+                  <i class="bi bi-star"></i>
+                  <i class="bi bi-star"></i>
+                  <i class="bi bi-star"></i>
+                </div>
+                </p>
+              </div>
+              <div class="testimonials__name">
+                <h3>Bill Smith</h3>
+                <p class="fw-light">Client</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="testimonials__card">
+                <p class="lh-lg">
+                  <i class="bi bi-blockquote-left"></i>
+                  I am greatful for C&S, they are great at what they do and I cannot wait to purchase my membership, totally worth my money.
+                  <i class="bi bi-blockquote-right"></i>
+                <div class="ratings p-1">
+                  <i class="bi bi-star"></i>
+                  <i class="bi bi-star"></i>
+                  <i class="bi bi-star"></i>
+                  <i class="bi bi-star"></i>
+                  <i class="bi bi-star"></i>
+                </div>
+                </p>
+              </div>
+              <div class="testimonials__name">
+                <h3>Susanna McDonald</h3>
+                <p class="fw-light">Client</p>
+              </div>
+            </div>
+          </div>
+          <div class="text-center">
+            <button class="btn btn-outline-light bi bi-arrow-left" type="button"
+              data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            </button>
+            <button class="btn btn-outline-light bi bi-arrow-right" type="button"
+              data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+    
+
+
+    <!-- THIRD MAIN SECTION -->
+
+    <div style="padding: 100px;" class="container p-5 text-center">
+      <h2>Client Profiles</h2>
+      <p>
+        We do not like to be shy! We love to present to our customers ahead of time who they are, and their specialty. 
+        Not all staff work the same massages, some are more specialized in certain areas than others. 
+      </p>
+      <a type="button" class="btn-custom" href="./clinet.html">Meet Our Staff</a>
+    </div>
+
+        <!-- FOURTH MAIN SECTION -->
+
+        <div style="padding: 100px;" class="container p-5 text-center">
+          <h2>Our Prices</h2>
+          <p>
+            Our prices range depending on the request of the massage, as well as if you choose to want to bundle your spa. Our lowest prices begin at $100, and increase from there.
+          </p>
+          <a type="button" class="btn-custom" href="./prices.html">Prices</a>
+        </div>
+    
+        <!-- FAQ SECTION -->
+        <section style="padding: 100px;">
+          <section id="faq" class="faq">
+            <div class="container">
+              <div class="row text-center">
+                <h1 class="display-3 fw-bold text-uppercase">faq</h1>
+                <div class="heading-line"></div>
+                <p class="lead">Here are some questions we get a lot from clients:</p>
+              </div>
+              <div class="row mt-5">
+                <div class="col-md-12">
+                  <div class="accordion" id="accordionExample">
+                    <div class="accordion-item shadow mb-3">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                          aria-expanded="true" aria-controls="collapseOne">
+                          How long does a session last ?
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div style="color: black;" class="accordion-body">
+                          It will typically range from 1-2 hours. We try to make our clients sadisfied, and we pay by session not per hour!
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item shadow mb-3">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          What kind of bundles can you get ?
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div style="color: black;" class="accordion-body">
+                          There are mainly 3 kinds: Economy, business, premium. Check the prices for more detail!
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item shadow mb-3">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          What if I have injuries ?
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div style="color: black;" class="accordion-body">
+                          When you contact us, we then ask for any type of medical needs/conditions and work from there! Contact us for more info.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item shadow mb-3">
+                      <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                          How expensive does it get?
+                        </button>
+                      </h2>
+                      <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                        data-bs-parent="#accordionExample">
+                        <div style="color: black;" class="accordion-body">
+                          If you are a first time customer, cost is $60. From then, it is $120 for one-time appointment. 
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+
+
+        <!-- FOOTER SECTION -->
+
+        <footer class="footer">
+          <div class="footer-content">
+              <div class="footer-section about">
+                  <h2>Cinnamon and Sage Spa</h2>
+                  <p>We provide high-quality products and services to make your life easier and better. Connect with us to stay updated on our latest offerings.</p>
+              </div>
+      
+              <div class="footer-section links">
+                  <h2>Quick Links</h2>
+                  <ul>
+                      <li><a href="./index.html">Home</a></li>
+                      <li><a href="./aboutus.html">About Us</a></li>
+                      <li><a href="./prices.html">Prices</a></li>
+                      <li><a href="./contact.html">Contact Us</a></li>
+                      <li><a href="./clinet.html">Staff</a></li>
+                  </ul>
+              </div>
+      
+              <div class="footer-section contact">
+                  <h2>Contact Us</h2>
+                  <p>Email: C&S@gmail.com</p>
+                  <p>Phone: +123 456 7890</p>
+              </div>
+          </div>
+      
+          <div>
+              &copy; 2024 Cinnamon and Sage
+          </div>
+      </footer>
+      
+
+
+  </main>
+
+<script type="module" src="./javascripts/main.js"></script>
 </body>
 </html>

@@ -1,3 +1,411 @@
 /* Your styles go here */
 @import "bootstrap/scss/bootstrap.scss";
 @import "bootstrap-icons/font/bootstrap-icons.css";
+
+$primary-color: #B736EA;   
+$secondary-color: #FF5722; 
+$card-color: #EB1599;
+$fotter-color-text: #CEA6EA; 
+$fotter-color-secondary: #bbb; 
+$fotter-color-third: #333; 
+$text-color: white; 
+
+
+/* BODY */
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+  body {
+    background-color: $card-color;
+    color: black; 
+}
+
+p{
+    font-size: 16px;
+
+}
+
+h1{
+    font-size: 110px;
+}
+
+h2{
+    font-size: 45px;
+}
+
+.navbar-toggler-icon {
+    background-color: $text-color; 
+}
+
+.btn-custom {
+    background-color: #D049EB; 
+    color: white;             
+    border: none;             
+    padding: 15px 25px;       
+    font-size: 16px;          
+    border-radius: 5px;       
+    cursor: pointer;          
+    transition: background-color 0.3s ease; 
+    text-decoration: none;
+}
+
+.btn-custom:hover {
+    color: black;
+}
+
+
+
+/* INDEX */
+
+.Main-title{
+    padding: 150px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.Main-index{
+    padding: 250px;
+    font-weight: bold;
+    text-align: center;
+    background-image: url(../images/spa5.jpg);
+    background-size: cover;
+}
+
+.review{
+    background-color: $primary-color;
+    border-radius: 30px;
+}
+
+
+
+
+
+/* FOOTER */
+
+.footer {
+    background-color: $fotter-color-third;
+    color: $text-color;
+    padding: 20px 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.footer-section {
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+.footer-section h2 {
+    color: $fotter-color-text;
+    margin-bottom: 10px;
+}
+
+.footer-section p, .footer-section ul {
+    font-size: 0.9em;
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 8px 0;
+}
+
+.footer-section ul li a {
+    color: $fotter-color-secondary;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: $fotter-color-text;
+}
+
+.footer .socials a {
+    color: $fotter-color-text;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.footer .socials a:hover {
+    color: $text-color;
+}
+
+
+
+
+/*STAFF PAGE*/
+
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .card {
+    border: none;
+    background-color: $primary-color;
+  }
+  
+  .card img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    padding-top: 15px;
+  }
+  
+  .card-title {
+    font-size: 1.2em;
+    color: $text-color; 
+  }
+  
+  .card-subtitle {
+    color: $text-color; 
+  }
+
+
+
+
+
+
+/*MEDIA QUERY ABOUT US*/
+
+
+
+@media (max-width: 1200px) {
+    .navbar img {
+        height: 70px; 
+    }
+    .Main-title h1 {
+        font-size: 2rem; 
+    }
+    .row {
+        padding: 20px; 
+    }
+    .container img {
+        width: 100%; 
+    }
+    h2 {
+        font-size: 1.5rem; 
+    }
+    p {
+        font-size: 1rem; 
+    }
+    footer .footer-content {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+    }
+}
+
+
+
+/* Phone screens */
+
+@media (max-width: 576px) {
+    .navbar img {
+        height: 50px; 
+    }
+    .Main-title h1 { 
+        text-align: center;
+    }
+    .row {
+        flex-direction: column; 
+        text-align: center; 
+    }
+    .col-md-6 {
+        margin-bottom: 20px; 
+    }
+    h2 {
+        font-size: 1.25rem; 
+    }
+    p {
+        font-size: 0.9rem; 
+    }
+    footer .footer-content ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    footer .footer-bottom {
+        font-size: 0.8rem; 
+    }
+}
+
+/*INDEX QUERY*/
+
+@media (max-width: 1200px) {
+    .Main-index h1 {
+        font-size: 4rem; 
+        text-align: center;
+        color: black;
+        padding: 50px;
+    }
+    .container {
+        padding: 50px 20px; 
+    }
+    h2 {
+        font-size: 1.5rem; 
+    }
+    p {
+        font-size: 1rem; 
+        margin-bottom: 20px; 
+    }
+    .btn-custom {
+        padding: 10px 20px;
+        font-size: 1rem; 
+    }
+    .carousel .testimonials__card {
+        padding: 15px;
+    }
+    .carousel .btn {
+        font-size: 0.8rem; 
+    }
+    footer .footer-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Phone screens (576px and below) */
+@media (max-width: 576px) {
+
+    .container {
+        padding: 30px 15px; 
+    }
+    h2 {
+        font-size: 1.25rem; 
+    }
+    p {
+        font-size: 0.9rem;
+    }
+    .btn-custom {
+        padding: 8px 15px;
+        font-size: 0.9rem; 
+    }
+    .carousel .testimonials__card {
+        padding: 10px;
+    }
+    .testimonials__name h3 {
+        font-size: 1rem;
+    }
+    .testimonials__name p {
+        font-size: 0.85rem;
+    }
+    footer .footer-content ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    footer .footer-bottom {
+        font-size: 0.8rem; 
+    }
+    section.faq h1 {
+        font-size: 1.5rem;
+    }
+    section.faq p.lead {
+        font-size: 1rem;
+    }
+    .accordion-item button {
+        font-size: 0.9rem;
+    }
+}
+
+/*PRICES QUERY*/
+
+
+@media (max-width: 1200px) {
+    .container {
+        padding: 20px;
+    }
+    .row.d-flex {
+        flex-direction: column; 
+        gap: 40px; 
+    }
+    h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    p {
+        font-size: 1rem;
+    }
+    ol {
+        padding-left: 20px; 
+    }
+    .table {
+        font-size: 0.9rem; 
+        width: 100%; 
+    }
+    .table th, .table td {
+        text-align: center; 
+    }
+    img.w-50 {
+        width: 100%; 
+
+    }
+    .card .card-text {
+        padding: 50px;
+        font-size: 1.2rem; 
+    }
+    .btn {
+        font-size: 1rem; 
+        padding: 10px 20px; 
+    }
+}
+
+/* Phone screens */
+@media (max-width: 576px) {
+    .row.d-flex {
+        flex-direction: column;
+        gap: 20px; 
+    }
+    h2 {
+        font-size: 1.25rem;
+    }
+    p {
+        font-size: 0.9rem;
+    }
+    .table {
+        font-size: 0.8rem;
+    }
+    .table th, .table td {
+        padding: 5px; 
+    }
+    img.w-50 {
+        width: 100%; 
+    }
+    .card .card-title {
+        font-size: 1rem;
+    }
+    .card .card-text {
+        font-size: 1rem; 
+        padding: 15px;
+    }
+    .btn {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+    .container.mb-5.text-center.p-5 {
+        padding: 20px;
+    }
+}
