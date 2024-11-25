@@ -2,9 +2,9 @@
 @import "bootstrap/scss/bootstrap.scss";
 @import "bootstrap-icons/font/bootstrap-icons.css";
 
-$primary-color: #AF96EB;   
+$primary-color: #BC66EB;   
 $secondary-color: #FF5722; 
-$card-color: #B274B5;
+$card-color: #F54652;
 $fotter-color-text: #ffd700; 
 $fotter-color-secondary: #bbb; 
 $fotter-color-third: #333; 
@@ -13,14 +13,23 @@ $text-color: white;
 
 /* BODY */
 
-body {
-    background-color: $card-color;
-    color: $text-color;   
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+
+
+* {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+  body {
+    background-color: $card-color;
+    color: $text-color; 
+}
+
 p{
-    font-size: 22px;
+    font-size: 16px;
+
 }
 
 h1{
@@ -33,18 +42,36 @@ h2{
 
 .navbar-toggler-icon {
     background-color: $text-color; 
-  }
+}
+
+.btn-custom {
+    background-color: #f4a261; 
+    color: white;             
+    border: none;             
+    padding: 15px 25px;       
+    font-size: 16px;          
+    border-radius: 5px;       
+    cursor: pointer;          
+    transition: background-color 0.3s ease; 
+    text-decoration: none;
+}
+
+.btn-custom:hover {
+    background-color: #e76f51; /* Darker shade on hover */
+}
+
+
 
 /* INDEX */
 
 .Main-title{
-    padding: 200px;
+    padding: 150px;
     font-weight: bold;
     text-align: center;
 }
 
 .Main-index{
-    padding: 300px;
+    padding: 250px;
     font-weight: bold;
     text-align: center;
     background-image: url(../images/spa5.jpg);
@@ -54,6 +81,9 @@ h2{
 .review{
     background-color: $primary-color;
 }
+
+
+
 
 
 /* FOOTER */
@@ -126,7 +156,9 @@ h2{
 }
 
 
-/*STAFFF PAGE*/
+
+
+/*STAFF PAGE*/
 
 body {
     font-family: Arial, sans-serif;
