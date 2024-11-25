@@ -24,7 +24,7 @@ $text-color: white;
 
   body {
     background-color: $card-color;
-    color: $text-color; 
+    color: black; 
 }
 
 p{
@@ -181,12 +181,15 @@ body {
   }
 
 
-/*MEDIA QUERY TABLET ABOUT US*/
 
 
-/* Tablet screens (768px and below) */
 
-@media (max-width: 768px) {
+
+/*MEDIA QUERY ABOUT US*/
+
+
+
+@media (max-width: 1200px) {
     .navbar img {
         height: 70px; 
     }
@@ -214,7 +217,7 @@ body {
 
 
 
-/* Phone screens (576px and below) */
+/* Phone screens */
 
 @media (max-width: 576px) {
     .navbar img {
@@ -251,30 +254,30 @@ body {
 
 @media (max-width: 1200px) {
     .Main-index h1 {
-        font-size: 4rem; /* Resize main title for smaller screens */
+        font-size: 4rem; 
         text-align: center;
         color: black;
         padding: 50px;
     }
     .container {
-        padding: 50px 20px; /* Reduce padding for smaller screens */
+        padding: 50px 20px; 
     }
     h2 {
-        font-size: 1.5rem; /* Adjust section titles */
+        font-size: 1.5rem; 
     }
     p {
-        font-size: 1rem; /* Reduce paragraph text size */
-        margin-bottom: 20px; /* Add spacing for readability */
+        font-size: 1rem; 
+        margin-bottom: 20px; 
     }
     .btn-custom {
         padding: 10px 20px;
-        font-size: 1rem; /* Resize button text */
+        font-size: 1rem; 
     }
     .carousel .testimonials__card {
         padding: 15px;
     }
     .carousel .btn {
-        font-size: 0.8rem; /* Adjust carousel button size */
+        font-size: 0.8rem; 
     }
     footer .footer-content {
         display: flex;
@@ -287,17 +290,17 @@ body {
 @media (max-width: 576px) {
 
     .container {
-        padding: 30px 15px; /* Further reduce padding */
+        padding: 30px 15px; 
     }
     h2 {
-        font-size: 1.25rem; /* Further adjust heading size */
+        font-size: 1.25rem; 
     }
     p {
-        font-size: 0.9rem; /* Smaller paragraph text */
+        font-size: 0.9rem;
     }
     .btn-custom {
         padding: 8px 15px;
-        font-size: 0.9rem; /* Further resize button */
+        font-size: 0.9rem; 
     }
     .carousel .testimonials__card {
         padding: 10px;
@@ -315,7 +318,7 @@ body {
         padding: 0;
     }
     footer .footer-bottom {
-        font-size: 0.8rem; /* Smaller text for footer */
+        font-size: 0.8rem; 
     }
     section.faq h1 {
         font-size: 1.5rem;
@@ -330,7 +333,7 @@ body {
 
 /*PRICES QUERY*/
 
-/*tablet*/
+
 @media (max-width: 1200px) {
     .container {
         padding: 20px;
@@ -370,7 +373,7 @@ body {
     }
 }
 
-/* Phone screens (576px and below) */
+/* Phone screens */
 @media (max-width: 576px) {
     .row.d-flex {
         flex-direction: column;
@@ -386,16 +389,16 @@ body {
         font-size: 0.8rem;
     }
     .table th, .table td {
-        padding: 5px; /* Reduce padding for table cells */
+        padding: 5px; 
     }
     img.w-50 {
-        width: 100%; /* Ensure image is full-width */
+        width: 100%; 
     }
     .card .card-title {
         font-size: 1rem;
     }
     .card .card-text {
-        font-size: 1rem; /* Further adjust card text size */
+        font-size: 1rem; 
         padding: 15px;
     }
     .btn {
